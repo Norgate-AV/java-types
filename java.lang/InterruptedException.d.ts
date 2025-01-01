@@ -2,7 +2,7 @@ export {};
 
 declare global {
     namespace java.lang {
-        class Exception extends Throwable {
+        class InterruptedException extends Exception {
             public constructor(message?: string);
             public getMessage(): string;
         }
