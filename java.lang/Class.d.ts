@@ -1,5 +1,10 @@
 export {};
 
+type Serializable = java.io.Serializable;
+type GenericDeclaration = java.lang.reflect.GenericDeclaration;
+type Type = java.lang.reflect.Type;
+type AnnotatedElement = java.lang.reflect.AnnotatedElement;
+
 declare global {
     namespace java.lang {
         class Class<T>
@@ -84,20 +89,20 @@ declare global {
                 annotationClass: Class<A>,
             ): A;
             public isAnnotationPresent(annotationClass: Class<unknown extends Annotation>): boolean;
-            public getAnnotationsByType<A extends Annotation>(annotationClass: Class<A>): A[];
-            public getAnnotations(): Annotation[];
-            public getDeclaredAnnotation(
-                annotationClass: Class<unknown extends Annotation>,
-            ): Annotation;
-            public getDeclaredAnnotationsByType<A extends Annotation>(
-                annotationClass: Class<A>,
-            ): A[];
-            public getDeclaredAnnotations(): Annotation[];
-            public getAnnotatedSuperclass(): AnnotatedType;
-            public getAnnotatedInterfaces(): AnnotatedType[];
-            public getNestHost(): Class<unknown>;
-            public isNestmateOf(c: Class<unknown>): boolean;
-            public getNestMembers(): Class<unknown>[];
+            // public getAnnotationsByType<A extends Annotation>(annotationClass: Class<A>): A[];
+            // public getAnnotations(): Annotation[];
+            // public getDeclaredAnnotation(
+            //     annotationClass: Class<unknown extends Annotation>,
+            // ): Annotation;
+            // public getDeclaredAnnotationsByType<A extends Annotation>(
+            //     annotationClass: Class<A>,
+            // ): A[];
+            // public getDeclaredAnnotations(): Annotation[];
+            // public getAnnotatedSuperclass(): AnnotatedType;
+            // public getAnnotatedInterfaces(): AnnotatedType[];
+            // public getNestHost(): Class<unknown>;
+            // public isNestmateOf(c: Class<unknown>): boolean;
+            // public getNestMembers(): Class<unknown>[];
         }
     }
 }

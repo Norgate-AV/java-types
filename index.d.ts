@@ -1,7 +1,9 @@
 export {};
 
+export * from "./java.io";
 export * from "./java.lang";
 export * from "./java.lang.ref";
+export * from "./java.lang.reflect";
 export * from "./java.util";
 
 declare global {
@@ -34,6 +36,8 @@ declare global {
      * @since 1.0
      */
     namespace java.lang {}
+    namespace java.lang.ref {}
+    namespace java.lang.reflect {}
     namespace java.io {}
     namespace java.net {}
     namespace java.nio {}
