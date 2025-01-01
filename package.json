@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "name": "@types/java",
+    "version": "1.0.9999",
+    "nonNpm": true,
+    "nonNpmDescription": "Type definitions the Java standard library",
+    "projects": [],
+    "devDependencies": {
+        "@types/java": "workspace:."
+    },
+    "owners": [
+        {
+            "name": "Damien Butt",
+            "githubUsername": "damienbutt"
+        }
+    ]
+}
