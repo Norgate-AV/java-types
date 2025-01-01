@@ -4,6 +4,9 @@ import Serializable = java.io.Serializable;
 import GenericDeclaration = java.lang.reflect.GenericDeclaration;
 import Type = java.lang.reflect.Type;
 import AnnotatedElement = java.lang.reflect.AnnotatedElement;
+import Method = java.lang.reflect.Method;
+import Constructor = java.lang.reflect.Constructor;
+import Field = java.lang.reflect.Field;
 
 declare global {
     namespace java.lang {
