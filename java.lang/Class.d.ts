@@ -1,9 +1,9 @@
 export {};
 
-type Serializable = java.io.Serializable;
-type GenericDeclaration = java.lang.reflect.GenericDeclaration;
-type Type = java.lang.reflect.Type;
-type AnnotatedElement = java.lang.reflect.AnnotatedElement;
+import Serializable = java.io.Serializable;
+import GenericDeclaration = java.lang.reflect.GenericDeclaration;
+import Type = java.lang.reflect.Type;
+import AnnotatedElement = java.lang.reflect.AnnotatedElement;
 
 declare global {
     namespace java.lang {
